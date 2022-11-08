@@ -1,16 +1,14 @@
-/* 
---byzantium: #820263ff;
---dogwood-rose: #d90368ff;
---timberwolf: #eadedaff;
---taupe-gray: #8c8494ff;
---space-cadet: #2e294eff;
---cyber-yellow: #ffd400ff;
-*/
-
 body {
+  --gunmetal: #2a2d34ff;
+  --carolina-blue: #009ddcff;
+  --orange-red: #f26430ff;
+  --dark-blue-gray: #6761a8ff;
+  --green-cyan: #009b72ff;
+  /*Colors*/
+
   margin: 0;
-  background-color: #2e294e;
-  color: #eadeda;
+  background-color: var(--gunmetal);
+  color: var(--carolina-blue);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,11 +23,11 @@ body {
 }
 
 #clock {
-  color: #eadeda;
-  background-color: #2e294e;
+  color: var(--carolina-blue);
+  background-color: var(--gunmetal);
   border: 0px;
   font-size: 70px;
-  text-shadow: 3px 3px #8c8494ff;
+  text-shadow: 3px 3px var(--dark-blue-gray);
 }
 
 @keyframes example {
@@ -45,7 +43,7 @@ body {
 }
 
 #greeting {
-  text-shadow: 3px 3px #8c8494ff;
+  text-shadow: 1px 1px var(--dark-blue-gray);
   animation-name: example;
   animation-duration: 5s;
   animation-iteration-count: infinite;
